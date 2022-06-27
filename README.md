@@ -4,7 +4,7 @@ Uma pequeno CRUD em API feito em Ruby on Rails.
 
 ## Adicionando testes de mutação
 
-Feito por @gabiliz e @LuizKraisch
+Feito por [Luiz Kraisch](https://github.com/luizkraisch) e [Gabriela Liz](https://github.com/gabiliz).
 
 Para uma atividade curricular, foram adicionados teste de mutação neste repositório. Os testes foram disponibilizados a partir da gem (pacote de código) `mutant-rspec` do Ruby. A gem foi adicionada ao `Gemfile` da aplicação da seguinte forma:
 
