@@ -58,6 +58,30 @@ RSpec.describe Api::V1::EmployeesController, type: :request do
     end
   end
 
+  describe 'mutation tests' do
+    context 'when trying to load a non-existing employee' do
+      it 'returns an error' do
+        post api_v1_employee_path('not_found'), params: { id: 'not_found' }
+
+        expect(response.status).to eq(:unprocessable_entity)
+        expect(json_response).to eq({
+          "error" => I18n.t('api.resource_not_found')
+        })
+      end
+    end
+
+    context 'when passing an argument other than an id' do
+      it 'returns an error' do
+        post api_v1_employee_path(self), params: { id: 'not_found' }
+
+        expect(response.status).to eq(:unprocessable_entity)
+        expect(json_response).to eq({
+          "error" => I18n.t('api.resource_not_found')
+        })
+      end
+    end
+  end
+
   private
 
   def valid_params
