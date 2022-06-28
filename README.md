@@ -10,7 +10,7 @@ Para uma atividade curricular, foram adicionados teste de mutação neste reposi
 
 `gem 'mutant-rspec', '~> 0.8.24', require: false`
 
-Com isso, a plataforma de testes unitários RSpec consegue lidar com testes de integração de forma mais natural. Todos os controllers da aplicação tiverem testes de mutação aplicados.
+Com isso, a plataforma de testes unitários RSpec consegue lidar com testes de mutação de forma mais natural. Todos os controllers da aplicação tiverem testes de mutação aplicados.
 
 #### Sites utiizados como exemplo
 
